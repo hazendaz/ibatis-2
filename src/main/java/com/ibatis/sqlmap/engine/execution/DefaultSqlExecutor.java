@@ -870,15 +870,6 @@ public class DefaultSqlExecutor implements SqlExecutor {
     }
 
     /**
-     * Getter for the batch size.
-     *
-     * @return - the batch size
-     */
-    public int getSize() {
-      return size;
-    }
-
-    /**
      * Add a prepared statement to the batch.
      *
      * @param statementScope
