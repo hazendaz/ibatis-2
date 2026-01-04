@@ -1,5 +1,5 @@
 /*
- * Copyright 2004-2025 the original author or authors.
+ * Copyright 2004-2026 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,7 +22,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.StringTokenizer;
 
 import javax.xml.XMLConstants;
 import javax.xml.parsers.DocumentBuilder;
@@ -331,19 +330,6 @@ public class NodeletParser {
      * Instantiates a new path.
      */
     public Path() {
-    }
-
-    /**
-     * Instantiates a new path.
-     *
-     * @param path
-     *          the path
-     */
-    public Path(String path) {
-      StringTokenizer parser = new StringTokenizer(path, "/", false);
-      while (parser.hasMoreTokens()) {
-        nodeList.add(parser.nextToken());
-      }
     }
 
     /**
